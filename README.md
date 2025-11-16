@@ -37,6 +37,43 @@ foreach (var line in report.GetProgressSummaryLines())
 }
 ```
 
+### 出力
+
+```
+[0:] ▼ Class ▼
+[0:] [未マーク] Google.GoogleCalendar
+[0:] [未マーク] FancyNote2019.在庫管理
+[0:] [未マーク] FancyNote2019.MainPage
+[0:] [未マーク] FancyNote2019.ViewModel.MainViewModel
+[0:] ▼ Method ▼
+[0:] [未マーク] Todoly.Todoly.PostItem
+[0:] [未マーク] StringEdit.StringEdit.splittext
+[0:] [未マーク] Dropbox.Dropbox.RecoverUpload
+[0:] [未マーク] Google.GoogleCalendar.SetPlan2GoogleCalnedarEvent
+[0:] [未マーク] FancyNote2019.MainPage.GetAllItems
+[0:] [未マーク] FancyNote2019.MainPage.GetLocation
+[0:] [Planned] FancyNote2019.PickerLogic.ExecuteAsync / ExternalLibrary / Maui / Net10 / メニューの構築
+[0:] [未マーク] FancyNote2019.Views.NewItemPage.OnQrButtonClicked
+[0:] [未マーク] FancyNote2019.Views.NewItemPage.ScanQRCode
+[0:] [未マーク] FancyNote2019.Views.NewItemPage.OnSaveButtonClicked
+[0:] [Planned] FancyNote2019.Model.GoogleCalendar.CalendarCoreViewModel.RegisterPlan / ExternalLibrary / Maui / Net10 / 予定登録
+[0:] [未マーク] FancyNote2019.Model.Address.GeoLocation.IsCurrentLocationWithin
+[0:] ▼ Property ▼
+[0:] [未マーク] AddressViewer.Models.Item.PhoneDataRootPath
+[0:] [未マーク] AddressViewer.Models.Item.AddressRootPathAndroid9
+[0:] [未マーク] AddressViewer.Models.Item.AddressRootPath
+[0:] [未マーク] Todoly.TodolyModel.Id
+[0:] [未マーク] Todoly.TodolyModel.Content
+[0:] [未マーク] FancyNote2019.Models.BookInformation.BookImage
+[0:] [未マーク] FancyNote2019.Models.BookInformation.Url
+[0:] [未マーク] FancyNote2019.Models.BookInformation.Isbn
+[0:] [未マーク] FancyNote2019.Constants.Constants.LocalInboxPath
+[0:] 【Class: 内部】進捗: 0/32 (0%)
+[0:] 【Class: 外部】進捗: 0/19 (0%)
+[0:] 【Method】進捗: 2/209 (0%)
+[0:] 【Property】進捗: 0/171 (0%)
+
+```
 ---
 
 ### 📦 外部ライブラリと NuGet の扱い(作成中)
