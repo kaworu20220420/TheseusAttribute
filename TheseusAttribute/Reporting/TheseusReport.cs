@@ -107,8 +107,8 @@ namespace TheseusMarker.Reporting
 			var lines = new List<string>();
 
 			var (internalMarked, internalTotal, externalMarked, externalTotal) = GetClassProgressByOrigin();
-			lines.Add($"【Class: 内部】進捗: {internalMarked}/{internalTotal} ({(internalTotal > 0 ? internalMarked * 100 / internalTotal : 0)}%)");
-			lines.Add($"【Class: 外部】進捗: {externalMarked}/{externalTotal} ({(externalTotal > 0 ? externalMarked * 100 / externalTotal : 0)}%)");
+			lines.Add($"【Class: 内部】進捗: {internalMarked}/{internalTotal} ({(0 < internalTotal ? internalMarked * 100 / internalTotal : 0)}%)");
+			lines.Add($"【Class: 外部】進捗: {externalMarked}/{externalTotal} ({(0 < externalTotal ? externalMarked * 100 / externalTotal : 0)}%)");
 
 			var progress = GetProgressByCategory();
 			foreach (var kv in progress)
@@ -116,7 +116,7 @@ namespace TheseusMarker.Reporting
 				if (kv.Key == "Class") continue;
 				var marked = kv.Value.marked;
 				var total = kv.Value.total;
-				var percent = (total > 0) ? marked * 100 / total : 0;
+				var percent = (0 < total) ? marked * 100 / total : 0;
 				lines.Add($"【{kv.Key}】進捗: {marked}/{total} ({percent}%)");
 			}
 

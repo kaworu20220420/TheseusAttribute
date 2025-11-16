@@ -1,7 +1,15 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<Version>1.0.0</Version>
+		<Authors>kaworu20220420</Authors>
+		<Company>TheseusMarker</Company>
+		<PackageId>TheseusMarker</PackageId>
+		<Description>構造で進捗を刻む C# 属性ライブラリ。Xamarin/Maui 移行に最適。</Description>
+		<PackageTags>migration;attribute;progress;Theseus;Maui;Xamarin</PackageTags>
+		<RepositoryUrl>https://github.com/kaworu20220420/TheseusAttribute</RepositoryUrl>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	</PropertyGroup>
 
 </Project>
